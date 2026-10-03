@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>老人用 AI 工具，哪些真有用、哪些是智商税？2026 版父母手机 AI 功能取舍清单</title>
+<meta name="description" content="面对父母手机上的 AI，全删和全装都是错的。这篇给出一条判断主线（省掉一个动作还是新添一个动作）、该留的四类功能、该删的四类套路、一份约 25 分钟能做完的白名单安装流程，以及三句能讲给爸妈听的口诀。">
+<style>
+:root{
+  --ink:#1d1d1f; --sub:#6b6b70; --line:#ECE9E3;
+  --brand:#C2622C; --brand2:#E08A4B; --bg:#FBFAF7;
+  --card:#FFFFFF; --shadow:0 8px 30px rgba(40,30,20,.07);
+  --wrap:740px;
+  --serif:"Songti SC","SimSun",Georgia,"Noto Serif SC",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.95 var(--sans);-webkit-font-smoothing:antialiased;}
+a{color:var(--brand);text-decoration:none;}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 26px;}
+
+/* 首页 */
+header.hero{padding:84px 0 60px;
+  background:linear-gradient(160deg,#fff7ef 0%,#fbfaf7 60%);
+  border-bottom:1px solid var(--line);margin-bottom:48px;}
+header.hero .badge{display:inline-block;font-size:12px;letter-spacing:2px;
+  color:var(--brand);border:1px solid rgba(194,98,44,.3);border-radius:999px;
+  padding:4px 12px;margin-bottom:22px;text-transform:uppercase;}
+header.hero h1{margin:0;font-family:var(--serif);font-weight:700;
+  font-size:46px;line-height:1.25;letter-spacing:.5px;}
+header.hero p{margin:16px 0 0;color:var(--sub);font-size:17px;max-width:520px;}
+.list{list-style:none;padding:0;margin:0 0 40px;}
+.list li{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:24px 26px;margin-bottom:18px;box-shadow:var(--shadow);
+  transition:.2s;}
+.list li:hover{transform:translateY(-3px);box-shadow:0 14px 38px rgba(40,30,20,.10);}
+.list a{color:var(--ink);font-family:var(--serif);font-size:22px;font-weight:700;}
+.list .s{color:var(--sub);font-size:15px;margin-top:10px;line-height:1.7;}
+.list .d{color:#a39c93;font-size:12px;margin-top:12px;letter-spacing:.5px;}
+footer.site{margin:72px 0 56px;padding-top:28px;border-top:1px solid var(--line);
+  color:var(--sub);font-size:13px;}
+
+/* 文章页 */
+article{max-width:var(--wrap);margin:0 auto;padding:72px 26px 0;}
+.cover{margin:-72px -26px 0;padding:88px 26px 56px;
+  background:linear-gradient(155deg,#fff3e6 0%,#fbfaf7 70%);
+  border-bottom:1px solid var(--line);}
+.cover .k{font-size:12px;letter-spacing:3px;color:var(--brand);text-transform:uppercase;}
+.cover h1{font-family:var(--serif);font-weight:700;font-size:40px;line-height:1.3;
+  margin:18px 0 0;letter-spacing:.5px;}
+.cover .meta{color:var(--sub);font-size:14px;margin-top:20px;}
+.tags{margin:30px 0 0;}
+.tags span{display:inline-block;background:var(--card);border:1px solid var(--line);
+  color:var(--sub);font-size:12px;padding:4px 12px;border-radius:999px;margin-right:8px;}
+.lead{font-family:var(--serif);font-size:21px;line-height:1.85;color:#3a3a3c;
+  border-left:3px solid var(--brand2);padding:4px 0 4px 22px;margin:44px 0 8px;}
+.body h2{counter-increment:sec;font-family:var(--serif);font-weight:700;
+  font-size:25px;line-height:1.5;margin:52px 0 18px;padding-top:8px;}
+.body h2::before{content:"0" counter(sec);display:block;font-family:var(--sans);
+  font-size:13px;font-weight:700;letter-spacing:2px;color:var(--brand);margin-bottom:8px;}
+.body h3{font-size:18px;font-weight:700;color:var(--brand);
+  margin:30px 0 10px;padding-left:14px;border-left:3px solid var(--brand2);}
+.body p{margin:0 0 18px;color:#2c2c2e;}
+.body ul{margin:0 0 18px;padding-left:0;list-style:none;}
+.body li{position:relative;padding-left:22px;margin:0 0 10px;color:#2c2c2e;}
+.body li::before{content:"";position:absolute;left:4px;top:11px;
+  width:7px;height:7px;border-radius:50%;background:var(--brand2);}
+.body strong{color:var(--brand);font-weight:700;}
+.quote{margin:36px 0;padding:26px 30px;background:linear-gradient(135deg,#fff6ec,#fdf3e8);
+  border-radius:14px;border-left:4px solid var(--brand);
+  font-family:var(--serif);font-size:20px;line-height:1.7;color:#7a431f;font-style:italic;}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:38px 0;}
+.stats .c{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:22px 14px;text-align:center;box-shadow:var(--shadow);}
+.stats .n{font-family:var(--serif);font-weight:700;font-size:30px;color:var(--brand);line-height:1.1;}
+.stats .l{color:var(--sub);font-size:13px;margin-top:8px;line-height:1.5;}
+.ai{background:#fff8f0;border:1px dashed var(--brand);color:#8a4b1f;
+  font-size:13px;padding:11px 15px;border-radius:8px;margin:40px 0 48px;}
+.back{display:inline-block;margin:46px 0 0;font-size:14px;color:var(--brand);
+  border-bottom:1px solid rgba(194,98,44,.35);padding-bottom:2px;}
+.more{margin:52px 0 0;padding-top:26px;border-top:1px solid var(--line);}
+.more .t{font-size:12px;letter-spacing:2px;color:#a39c93;margin-bottom:14px;}
+.more a{display:block;font-family:var(--serif);font-size:17px;font-weight:700;
+  color:var(--ink);padding:9px 0;border-bottom:1px solid var(--line);}
+.more a:hover{color:var(--brand);}
+@media(max-width:640px){
+  header.hero h1{font-size:34px;} .cover h1{font-size:30px;}
+  .lead{font-size:18px;} .stats{grid-template-columns:1fr;}
+  .body h2{font-size:22px;}
+}
+</style>
+</head>
+<body>
+<article>
+<div class="cover">
+<div class="wrap">
+<div class="k">元枢认知差 · 认知变现笔记</div>
+<h1>老人用 AI 工具，哪些真有用、哪些是智商税？2026 版父母手机 AI 功能取舍清单</h1>
+<p class="lead">你爸手机上大概已经躺着三四个带「智能」字样的东西：有系统自带的语音输入，有别人推荐来的助手，还有一个他自己在直播间看到的。它们都叫 AI，干的却完全不是一回事。真正该做的不是全删，也不是全装——是分清楚哪几个能替他省力气，哪几个是冲着他的钱包来的。</p>
+<div class="tags"><span>银发</span><span>AI尽孝</span><span>数字适老</span><span>消费避坑</span><span>认知差</span></div>
+<div class="meta">元枢认知差 · 原创</div>
+</div>
+</div>
+<div class="wrap">
+<div class="stats"><div class="c"><div class="n">6.02亿 / 42.8%</div><div class="l">我国生成式人工智能产品用户规模与普及率，较2024年12月增长141.7%（CNNIC第57次《中国互联网络发展状况统计报告》，截至2025年12月）</div></div><div class="c"><div class="n">7000元以上</div><div class="l">技能培训领域消费纠纷平均涉诉金额；该领域投诉明确涉及部分老年消费者被新概念包装营销诱导报名（中消协《2026年第一季度全国消协组织受理投诉情况分析》，2026年5月11日发布）</div></div><div class="c"><div class="n">8.79%</div><div class="l">2026年一季度全国消协组织受理投诉中虚假宣传问题占比，比重同比上升；一季度共受理投诉470100件，同比增长1.8%（同上）</div></div></div>
+<div class="body">
+<h2>先说结论：别问「要不要用 AI」，要问「这一件事，AI 能不能替他省一步」</h2>
+<p>多数子女面对父母手机上的 AI，只有两种反应：一律删掉，或者一律装上。两种都不对——前者把真正能帮上忙的东西也删了，后者把风险一起请进了门。</p>
+<p>判断的主线其实只有一条：<strong>这个 AI 功能，是把他原本要做的一个动作去掉了，还是给他新添了一个动作？</strong> 语音输入去掉了「打字」，是省；一个要注册账号、要选模型、要充值才能用的助手，是加。老人放弃一个东西，从来不是因为它难，而是因为它多出来的一堆前置步骤，和他想办的那件事没关系。</p>
+<blockquote class="quote">判断一个 AI 功能该不该留在父母手机上，只看一件事：它替他省掉了一个动作，还是给他新添了一个。</blockquote>
+<h2>一组数字：AI 成了大路货，冲着它来的坑也成了大路货</h2>
+<p>先看清盘子。中国互联网络信息中心第 57 次《中国互联网络发展状况统计报告》显示，截至 2025 年 12 月，我国生成式人工智能产品用户规模达 6.02 亿人，普及率 42.8%，较 2024 年 12 月增长 141.7%。同一份报告里，60 岁及以上人群的互联网使用率已达 53.7%——<strong>每两位老人里，就有一位在线上。</strong></p>
+<p>两件事叠在一起的意思是：AI 已经不是新鲜玩意儿，老人也已经不是旁观者。但另一头，消协的口径正在同步收紧。</p>
+<p>中国消费者协会 2026 年 5 月 11 日发布的《2026 年第一季度全国消协组织受理投诉情况分析》显示，一季度全国消协组织共受理消费者投诉 470100 件，同比增长 1.8%；其中虚假宣传问题占 8.79%，比重同比上升。报告重点点出的技能培训领域，<strong>平均涉诉金额超过 7000 元</strong>。</p>
+<p>要紧的是下面这一段。这份分析在「数字技能培训类」中写到：一些经营者抓住大学生、待业人员、希望兼职增收群体以及<strong>部分老年消费者急于跟上时代发展、寻求副业变现的心理</strong>，利用「AI」「数字人」「短视频带货」等新概念、新风口进行包装营销，诱导消费者报名。同一份分析在「网络理财课程类」中还提到，<strong>相关投诉中老年消费者占比较高</strong>。</p>
+<p>到了 2026 年 8 月 25 日，中消协又专门就人工智能服务发布消费提示，提醒消费者理性认识通用生成式人工智能的<strong>信息辅助和参考属性</strong>：对涉及价格费用、合同条款、售后服务、法律责任等重要消费信息，不宜仅依据人工智能生成内容作出决定，应通过经营者官方渠道、合同文本、监管部门及其他权威渠道进行核实确认。提示同时明确了人工智能服务引发消费问题的两类情形——面向公众的通用生成式人工智能，可能出现缺乏依据的兜底承诺与信息不准确；经营者自行部署的人工智能客服，不能因技术介入而弱化经营者应承担的责任。</p>
+<blockquote class="quote">AI 本身不骗人，是「AI」这两个字正在被当成一块招牌使。</blockquote>
+<h2>该留下的四类：都能替他省掉一个动作</h2>
+<p>下面这四类，是我认为值得主动给父母装上的。共同点是：不需要学，开口就行，或者点一下就行。</p>
+<h3> 第一类：把话说出来，让机器去打字</h3>
+<p>语音输入与语音转文字，对老人的收益很直接——它去掉的是「打字」这个动作。手写慢、拼音不熟、笔画记不清，这些在语音面前全部消失。</p>
+<p>装法也简单：在系统设置里确认输入法已开启语音输入，把麦克风按钮留在键盘上显眼的位置，再把入口放到桌面第一屏。教的时候只说一句：<strong>想说什么，按住那个小话筒，说完再松手。</strong></p>
+<h3> 第二类：看不清的字，让它念出来</h3>
+<p>屏幕朗读、文本放大、识图取字，这一组解决的是「药品说明书字号太小」「账单看不清」「短信里那行小字写的什么」。</p>
+<p>边界必须讲死：<strong>只用它看懂字面意思，不用它决定吃不吃、吃多少、停不停。</strong> 凡是涉及身体不适的判断，一律去医院或社区卫生服务中心，AI 给的说法不作数。这一条没有例外。</p>
+<h3> 第三类：家庭影像的整理与修复</h3>
+<p>老照片修复上色、把一堆零散视频剪成一条能看的片子——这两件事 AI 确实接得住，而且省掉的是「学修图软件」「学剪辑软件」这两个老人几乎不可能跨过去的坎。</p>
+<p>本站另有两篇专文讲具体做法：一篇讲《老照片怎么修复上色？2026 年不用学修图软件的三种办法，附翻拍分辨率与保存标准》，另一篇讲《爸妈拍了一堆视频不会剪？一句话让 AI 剪完》。这两篇都在本站首页。</p>
+<h3> 第四类：常识性问题，问它比问人方便</h3>
+<p>这道菜怎么烧、这盆花叶子发黄是怎么回事、这段路怎么走、明天要不要带伞——这类问题问 AI，比翻搜索引擎、比等子女回电话都快。</p>
+<p>还是那句边界：<strong>涉及钱的、涉及身体的、涉及合同和政策的，不问。</strong> 这三类问错了，代价不对等。</p>
+<h2>该删掉的四类：冲着钱包来的</h2>
+<h3> 第一类：打着 AI 旗号的「副业变现课」</h3>
+<p>中消协那份分析里，把它的问题拆成了四条，这四条正好可以当鉴别清单用：</p>
+<ul>
+<li><strong>话术上</strong>：出现「学会即可接单」「轻松月入过万」「带做副业」「边学边赚」这类表述，或者展示所谓成功案例、高收入截图</li>
+<li><strong>收费上</strong>：出现「先学后付」「分期缴费」，事后才发现所谓分期实质是消费贷款</li>
+<li><strong>内容上</strong>：实际课程多为基础软件操作、碎片化资料，和网上能查到的差不多</li>
+<li><strong>退费上</strong>：还没上课、还没实际使用，就被「已开课不退」「一经报名概不退款」挡回来</li>
+</ul>
+<p>这四条<strong>占任意一条就该撤</strong>。老人加入这类群，图的多半不是那笔钱，是一句「我还没被时代落下」。</p>
+<h3> 第二类：用 AI 生成的「官方通知」和「补贴申领」</h3>
+<p>凡是提到补贴到账、账户异常、社保核验、理财产品的消息，不管排版多像官方、措辞多正规，一律走官方渠道核实，不点链接、不填信息。中消协 8 月那份提示的核心，说的就是这件事：<strong>AI 生成内容不能替代合同约定与权威机构意见。</strong></p>
+<h3> 第三类：把 AI 当成养生或看病的依据</h3>
+<p>这条踩的是医疗红线。症状、用药、体检指标，一概不问 AI。可以问的是「这个药盒上的字怎么念」，不可以问的是「我这个症状要不要紧」。</p>
+<h3> 第四类：声称「一键生成、躺着赚钱」的数字人与带货工具</h3>
+<p>技术本身是中性的，问题在承诺。凡是承诺确定收益、承诺接单资源、承诺回本周期的，都属于前面中消协点名的夸大收益承诺。遇到就把这句话讲给爸妈听：<strong>凡是保证赚钱的，先把「保证」两个字当警报。</strong></p>
+<h2>一个真实场景：他不是想赚钱，是不想被说「跟不上时代」</h2>
+<p>一位在南京工作的朋友讲过他爸的事。他爸六十七，退休前是厂里的技术骨干，家里到现在还留着他当年的图纸。去年下半年，他爸手机里多了一个群，名字里带着「AI 短视频带货」，交了两千多。</p>
+<p>他第一反应是生气，话到嘴边忍住了。他坐下来问了一句：「爸，你交这个钱，是想挣这个钱吗？」他爸沉默了一会儿说：「也不是。就是你们天天说 AI，我怕我听不懂你们说话。」</p>
+<p>后来他做了两件事。第一件，带他爸去社区听了两次「银龄数字课堂」——课上教的都是拍照、发语音、看消息这些最基础的，他爸反而听得很认真，因为「老师讲得慢，还能问」。第二件，把他爸拍的三个月的菜地视频，用一句话让工具剪成了一条三分钟不到的片子，发进了家庭群。</p>
+<p>第三天，他爸自己退了那个群。</p>
+<blockquote class="quote">老人被那种课盯上，缺的往往不是判断力，是一个能让他体面地参与进来的入口。</blockquote>
+<h2>可照做的步骤：给父母手机装一份「AI 白名单」（约 25 分钟）</h2>
+<p>这套流程建议当面做，做一遍大概二十五分钟。别远程发截图，老人在截图面前会紧张。</p>
+<h3> 第 1 步：先盘一遍，别动手删</h3>
+<p>把手机里所有带「智能」「AI」「助手」字样的应用和功能列出来，包括系统设置里藏着的。先列，不删。<strong>删之前先搞清楚他为什么装它</strong>——这一步能避免你把真有用的那个一起删掉。</p>
+<h3> 第 2 步：用一个问题逐个过</h3>
+<p>对着清单上的每一项问一句：它替他省掉了哪个动作？</p>
+<p>答得上来，留；答不上来，或者答案是「它说能赚钱」，卸载。这一问能筛掉七八成。</p>
+<h3> 第 3 步：只留四个入口，全部放到桌面第一屏</h3>
+<p>语音输入、朗读与放大、识图取字、家庭影像整理。<strong>四个就够</strong>，多了等于没有。放第一屏的理由和前面那篇讲字体的一样——老人不是记不住，是找不到。</p>
+<h3> 第 4 步：把「不许问」写在便签上</h3>
+<p>用他的话写，别用术语：钱的事、身体的事、盖章的事，不问手机，问你儿子。</p>
+<p>这张便签贴在手机壳里或者冰箱门上，纸比记忆可靠。</p>
+<h3> 第 5 步：定一条付款前的规矩</h3>
+<p>金额可以家里自己定，两百元是个好用的分界线：<strong>凡是超过这个数的付费，先给子女打一通电话。</strong> 不用解释理由，也不用他判断值不值——他要做的只是打一通电话。</p>
+<p>骗子的整套节奏都建立在「趁他身边没人商量」上，一通家里的电话就能把节奏打断。</p>
+<h3> 第 6 步：当场演练一次</h3>
+<p>你用自己的手机念一段「学 AI 带货、月入过万」的话术，看他的第一反应。演过一次，他下次真遇到时脑子里会有个声音。这一步最花时间，也最值得。</p>
+<h3> 第 7 步：截图存档</h3>
+<p>把整理好的桌面截一张图存进相册，文件名写「手机桌面-标准版」。系统大版本更新把布局冲掉之后，他自己照着图就能摆回来。</p>
+<h2>三句能讲给爸妈听的口诀</h2>
+<ul>
+<li><strong>省动作的留下，添动作的删掉。</strong></li>
+<li><strong>关于钱和身体的事，手机说了不算。</strong></li>
+<li><strong>要交钱之前，先给我打一通电话。</strong></li>
+</ul>
+<h2>常见疑问</h2>
+<h3> 老人自己装的东西，能不能直接帮他卸载？</h3>
+<p>先问，再删。直接删会伤到他的那点自主感，下次他就学会把东西藏起来了。问清楚他为什么装，往往能问出一句真心话——那句话才是你真正该接住的东西。</p>
+<h3> AI 念出来的说明书，能信多少？</h3>
+<p>字面意思可以信，判断不能信。药名、用法用量这些印刷在包装上的信息，识别工具一般能读准；但「我这个情况能不能吃」，必须由医生或药师来答。识字的归工具，判断的归人。</p>
+<h3> 系统自带的 AI 功能，会不会把家里的事传出去？</h3>
+<p>不同厂商的说明不一样，稳妥做法是翻一遍权限设置：麦克风、相册、定位、通讯录，非必需的一律关掉。另外有一条家里通用的底线——<strong>证件、银行卡、病历这些，不要拿去让任何工具识别</strong>，原件拍照留档就够了。</p>
+<h3> 父母问「这个是不是 AI 骗人的」，怎么回答？</h3>
+<p>别急着给结论，先问三个问题：谁推荐给你的、要交多少钱、承诺了什么。<strong>三个问题里有任何一个答不上来，就先别交钱。</strong> 这个问法比直接判定更管用，因为它教的是方法，下次他自己就能用。</p>
+<h3> 社区和老年大学开的数字课，值得去吗？</h3>
+<p>值得，而且现在正好是密度高的时候。工业和信息化部办公厅 2026 年 5 月印发《关于开展 2026 年「数字适老中国行」活动的通知》（工信厅信管函〔2026〕223 号），活动时间 2026 年 5 月至 12 月，其中 6 月至 11 月为集中实施阶段，明确要求基础电信企业走进社区、老年大学、养老机构，常态化开展「银龄数字课堂」等教学活动。课上有老师、有同伴、能反复问，这三样是家里给不了的。</p>
+<h2>写在最后：判断这件事，得由家里给</h2>
+<p>政策这一头是齐的。工信部「数字适老中国行」把 2026 年 6 月至 11 月定为集中落地阶段；民政部联合中央宣传部、中央网信办等 12 部门印发《关于开展「乐享银龄」系列活动 丰富老年人精神文化生活通知》，自 2026 年上半年起每年常态化开展，六大板块里的「乐龄科普」明确要持续开展「智慧助老」行动。</p>
+<p>有课、有展、有人教。但「这个该不该装」这个判断，课堂上不会讲，只能家里给。而给的方式，也不是替他决定——是把那条判断的主线，交到他自己手里。</p>
+<blockquote class="quote">给父母装 AI，装的不该是功能，是他用完以后那句「这个我也能弄」。</blockquote>
+<h3> 数据口径与说明</h3>
+<p>生成式人工智能产品用户规模 6.02 亿人、普及率 42.8%（较 2024 年 12 月增长 141.7%）、60 岁及以上人群互联网使用率 53.7%，均来自中国互联网络信息中心第 57 次《中国互联网络发展状况统计报告》，数据截至 2025 年 12 月。2026 年一季度全国消协组织受理消费者投诉 470100 件、同比增长 1.8%、虚假宣传问题占 8.79%、技能培训领域平均涉诉金额超过 7000 元、数字技能培训与网络理财课程类投诉中涉及老年消费者的相关表述，均出自中国消费者协会《2026 年第一季度全国消协组织受理投诉情况分析》（2026 年 5 月 11 日发布），人民日报 2026 年 5 月 21 日第 13 版、新华网、央视网均有同口径报道。人工智能服务消费提示内容出自中国消费者协会 2026 年 8 月 25 日发布的人工智能服务消费提示，转述以官方公开发布文本为准。文中不点名任何具体工具、平台或经营主体，所述功能均为通用能力类别，实际操作以你手中设备当前版本为准。本文仅提供家庭数字生活的通用判断思路，不构成消费、法律、医疗或投资方面的专业意见。</p>
+</div>
+<div class="ai">本文含AI辅助创作</div>
+<div class="more"><div class="t">继续读</div><a href="ai-cut-video-for-parents-2026.html">爸妈拍了一堆视频不会剪？一句话让 AI 剪完：2026 版零剪辑基础操作清单，附 8 句能照抄的说法</a><a href="old-photo-restore-colorize-2026.html">老照片怎么修复上色？2026 年不用学修图软件的三种办法，附翻拍分辨率与保存标准</a><a href="parent-phone-anti-fraud-settings-2026.html">爸妈总被骗，是哪三个设置没关？2026 版父母手机防骚扰防诈骗操作清单</a></div>
+<a class="back" href="../index.html">&larr; 返回全部文章</a>
+</div>
+</article>
+<footer class="site"><div class="wrap">元枢认知差 · 独立运营的知识笔记</div></footer>
+</body>
+</html>
